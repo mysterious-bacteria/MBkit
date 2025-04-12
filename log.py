@@ -4,7 +4,7 @@ import colorama
 import time
 
 log_format = "{time} | {level} | {filename_only}: {line} - {function} | {string}"
-time_format = "{year}-{month}-{day}"
+time_format = "{year}-{month}-{day} {hour}:{minute}:{sec}"
 
 colorama.init(True)
 
@@ -55,3 +55,4 @@ def log(string, log_level=LogLevel.INFO):
         print(colorama.Fore.BLUE + message)
     else:
         print(message)
+
